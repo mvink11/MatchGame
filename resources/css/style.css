@@ -6,7 +6,7 @@ html{
 }
 
 .container-fluid{
-  margin-top: 5.25rem;
+  background-color: rgb(255,242,242);
 }
 
 h1{
@@ -24,7 +24,12 @@ p{
   color: rgb(74,74,74);
 }
 
-#rules{
+.row{
+  padding: 5.25rem 5.25rem 0 5.25rem;
+}
+
+.col-xs-12,
+.col-md-3{
   color: rgb(74,74,74);
   float: left;
   margin-bottom: 20px;

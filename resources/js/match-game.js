@@ -14,18 +14,18 @@ $(document).ready(function() {
 MatchGame.generateCardValues = function () {
   //empty array for in-order cards
 
-  var arr = [];
+  var cardGrid = [];
   for (var i = 1; i <= 8; i++) {
-    arr.push(i, i);
+    cardGrid.push(i, i);
   }
-  var m = arr.length, t, j;
-  while (m) {
-    j = Math.floor(Math.random() * m--);
-    t = arr[m];
-    arr[m] = arr[j];
-    arr[j] = t;
+  var randomCards = cardGrid.length, t, j;
+  while (randomCards) {
+    j = Math.floor(Math.random() * randomCards--);
+    t = cardGrid[randomCards];
+    cardGrid[randomCards] = cardGrid[j];
+    cardGrid[j] = t;
   }
-  return arr;
+  return cardGrid;
 };
 
 
