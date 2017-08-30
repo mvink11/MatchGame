@@ -50,7 +50,7 @@ MatchGame.renderCards = function(cardValues, $game) {
     'hsl(360,85%,65%)'
   ];
 
-  $('#game').html('');
+  $game.html('');
   for (var i = 0; i < cardValues.length; i++) {
     var $card = $('<div class="card col-xs-3"></div>');
     $card.data('value', cardValues[i]);
